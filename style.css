@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #bebebe;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: rgb(87, 107, 220);
+    /* ? Initializes flex on parent container */
+    display: flex;
+    /* ? Allows us to define direction of flex items (row default) */
+    /* flex-direction: row; */
+    /* ? Aligns flex items on main axis */
+    justify-content: flex-end;
+    /* flex-direction: column; */
+    /* ? Aligns flex items on x axis */
+    /* align-items: center; */
+    /* ? Allows us to modify space between flex items */
+    gap: 1em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+}
+
+.main-container {
+    border: 2px solid black;
+    margin-top: 3em;
+    width: 1000px;
+    height: 500px;
+
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    /* ? Handles white space of flex items that are wrapped within constrained parent */
+    /* align-content: flex-start; */
+}
+
+.c {
+    width: 200px;
+    height: 100px;
+}
+
+.c1 {
+    border: 2px solid red;
+}
+
+.c2 {
+    border: 2px solid blueviolet;
+}
+
+.c3 {
+    border: 2px solid orange;
+    /* ? Works on flex item, overrides default flex parent align item property */
+    align-self: flex-start;
+}
+
+.c4 {
+    border: 2px solid magenta;
+}
+
+.c5 {
+    border: solid chocolate;
+}
